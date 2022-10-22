@@ -13,7 +13,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="employees")
+@Table(name="employee")
 public class Employee {
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "EMPLOYEE_CONSTRAINT")
