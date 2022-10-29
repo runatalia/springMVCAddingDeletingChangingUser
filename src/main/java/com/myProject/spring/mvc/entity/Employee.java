@@ -13,24 +13,25 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="employee")
+@Table(name = "employee")
 public class Employee {
+
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "EMPLOYEE_CONSTRAINT")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "EMPLOYEE_CONSTRAINT")
     @SequenceGenerator(name = "EMPLOYEE_CONSTRAINT", sequenceName = "EMPLOYEE_CONSTRAINT", allocationSize = 1)
-    @Column(name="id")
+    @Column(name = "id")
     private int id;
-    
-    @Column(name="name")
+
+    @Column(name = "name")
     private String name;
-    
-     @Column(name="surname")
+
+    @Column(name = "surname")
     private String surname;
-     
-      @Column(name="department")
+
+    @Column(name = "department")
     private String department;
-      
-       @Column(name="salary")
+
+    @Column(name = "salary")
     private int salary;
 
     public Employee(String name, String surname, String department, int salary) {
@@ -87,11 +88,4 @@ public class Employee {
     public String toString() {
         return "Employee{" + "id=" + id + ", name=" + name + ", surname=" + surname + ", department=" + department + ", salary=" + salary + '}';
     }
-    
-    
-    
-    
-
-
-
 }

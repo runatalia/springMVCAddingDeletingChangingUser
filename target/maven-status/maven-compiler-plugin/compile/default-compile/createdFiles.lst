@@ -1,4 +1,7 @@
-com\myProject\spring\mvc\Controller\MyController.class
-com\myProject\spring\mvc\DAO\EmployeeDAO.class
+com\myProject\spring\mvc\aspect\LoggingAspect.class
+com\myProject\spring\mvc\controller\MyController.class
+com\myProject\spring\mvc\service\EmployeeService.class
 com\myProject\spring\mvc\DAO\EmployeeDAOImp.class
+com\myProject\spring\mvc\DAO\EmployeeDAO.class
+com\myProject\spring\mvc\service\EmployeeServiceImpl.class
 com\myProject\spring\mvc\entity\Employee.class
